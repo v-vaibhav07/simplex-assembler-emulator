@@ -1,0 +1,27 @@
+Name: Vaibhav Yadav
+Roll No: 2401CS70
+
+Assembler Features Implemented:
+- Two pass assembler implemented
+- Label detection and storage
+- Duplicate label error detection
+- Undefined label detection
+- Invalid mnemonic detection
+- Missing operand detection
+- Generates object file (.o)
+- Generates listing file (.lst)
+- Generates log file (.log)
+- Supports SET pseudo instruction
+- Handles decimal, hex and octal operands
+
+Emulator Features Implemented:
+- Loads object file
+- Implements registers A, B, PC, SP
+- Executes SIMPLEX instruction set
+- Provides instruction trace mode
+- Provides memory dump
+- Detects infinite loops
+
+Test Cases:
+- Multiple assembly programs tested
+- Successful and error cases included
