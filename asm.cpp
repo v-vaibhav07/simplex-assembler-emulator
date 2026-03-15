@@ -378,7 +378,7 @@ int main(int argc, char *argv[])
         string objectfilename = basename + ".o";
         string listingfilename = basename + ".lst";
 
-        ofstream objfptr(objectfilename, ios::out | ios::binary);
+        ofstream objfptr(objectfilename);
         ofstream listfptr(listingfilename);
 
         if (!objfptr)
@@ -395,7 +395,7 @@ int main(int argc, char *argv[])
         // printing to object file
         for (auto &&i : finalcodes)
         {
-            objfptr << finalinstruction(i);
+            objfptr << finalinstruction(i)  << "\n";
         }
 
         // writing to listing file
